@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scout Goat — Find Work Fast. Hire Help Faster.</title>
+  <meta name="description" content="Side-hustlers get paid today. Families & businesses hire reliable help fast." />
+  <style>
+    :root{
+      --sg-black:#0B0B0C;
+      --sg-white:#FFFFFF;
+      --sg-slate:#1F2937;
+      --sg-pink:#F7CFE3;
+      --sg-pink-600:#E9A8C7;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--sg-black);background:#fff;line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1140px;margin:0 auto;padding:0 16px}
+    header{position:sticky;top:0;z-index:20;background:#fffcc0;background:#fff;backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #eee}
+    header .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+    nav a{margin-left:16px;font-size:14px;opacity:.9}
+    h1{font-size:40px;margin:0 0 8px}
+    h2{font-size:28px;margin:0 0 8px}
+    .hero{padding:56px 0}
+    .grid{display:grid;gap:16px}
+    .grid-2{grid-template-columns:1fr}
+    @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 20px;font-weight:700}
+    .btn-primary{background:var(--sg-pink);box-shadow:0 10px 30px rgba(233,168,199,.45)}
+    .btn-outline{border:1px solid var(--sg-pink);}
+    .card{border:1px solid #eee;border-radius:16px;background:#fff;padding:16px}
+    .muted{color:#555}
+    .mt-6{margin-top:24px}.mt-8{margin-top:32px}.mt-12{margin-top:48px}
+    .section{padding:48px 0}
+    .footer{border-top:1px solid #eee;margin-top:40px;padding:24px 0;color:#666;font-size:14px}
+    /* Sticky CTA */
+    .sticky-mobile{position:fixed;left:0;right:0;bottom:10px;display:flex;gap:10px;justify-content:center;z-index:40}
+    .sticky-mobile .wrap{display:flex;gap:10px;background:linear-gradient(90deg,var(--sg-pink),var(--sg-pink-600));border-radius:999px;padding:8px 10px;box-shadow:0 10px 30px rgba(233,168,199,.45)}
+    .sticky-mobile a{background:#fff;border-radius:999px;padding:10px 16px;font-weight:700}
+    @media(min-width:900px){
+      .sticky-mobile{display:none}
+      .sticky-desktop{position:fixed;right:24px;top:30vh;display:flex;flex-direction:column;gap:10px;z-index:40}
+      .sticky-desktop a{padding:10px 16px;border-radius:999px}
+      .sticky-desktop .call{background:var(--sg-pink);box-shadow:0 10px 30px rgba(233,168,199,.45);}
+      .sticky-desktop .text{border:1px solid var(--sg-pink);background:#fff;}
+    }
+    /* Forms */
+    form .row{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:700px){form .row{grid-template-columns:1fr 1fr}}
+    label span{display:block;font-size:14px;margin-bottom:4px}
+    input,select,textarea{width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:10px;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--sg-pink-600);box-shadow:0 0 0 3px rgba(233,168,199,.25)}
+    .images{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .imgbox{border:1px solid #eee;border-radius:12px;overflow:hidden}
+    .badge{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--sg-pink);background:#fff;margin-right:6px;margin-bottom:6px;font-size:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container bar">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:32px;height:32px;border-radius:50%;background:var(--sg-pink)"></div>
+        <strong>Scout Goat</strong>
+      </div>
+      <nav class="desktop-only">
+        <a href="#hire">Hire</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sticky CTA -->
+  <div class="sticky-mobile">
+    <div class="wrap">
+      <a href="tel:2512890478">Call Now</a>
+      <a href="sms:2512890478">Text Now</a>
+    </div>
+  </div>
+  <div class="sticky-desktop">
+    <a class="call" href="tel:2512890478">Call Now</a>
+    <a class="text" href="sms:2512890478">Text Now</a>
+  </div>
+
+  <section class="hero">
+    <div class="container grid grid-2">
+      <div>
+        <h1>Find Work Fast. <span style="background:var(--sg-pink);border-radius:10px;padding:0 8px">Hire Help Faster.</span></h1>
+        <p class="muted">Side-hustlers get paid today. Families & businesses hire reliable help in hours, not weeks.</p>
+        <div class="mt-6">
+          <a class="btn btn-primary" href="#hire">I want to Hire</a>
+          <a class="btn btn-outline" href="#work" style="margin-left:8px">I want to Work</a>
+        </div>
+        <div class="mt-6">
+          <span class="badge">Vetted pros</span>
+          <span class="badge">Same-day options</span>
+          <span class="badge">Choose your rate & skills</span>
+        </div>
+      </div>
+      <div class="images">
+        <div class="imgbox">
+          <!-- Inline SVG 1 -->
+          <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="g1"><stop offset="0%" stop-color="#F7CFE3"/><stop offset="100%" stop-color="#E9A8C7"/></linearGradient></defs>
+            <rect width="1200" height="800" fill="url(#g1)"/>
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="48" fill="#0B0B0C">Helpers at Work</text>
+          </svg>
+        </div>
+        <div class="imgbox">
+          <!-- Inline SVG 2 -->
+          <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="g2"><stop offset="0%" stop-color="#F7CFE3"/><stop offset="100%" stop-color="#E9A8C7"/></linearGradient></defs>
+            <rect width="1200" height="800" fill="url(#g2)"/>
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="48" fill="#0B0B0C">Cleaning Crew</text>
+          </svg>
+        </div>
+        <div class="imgbox">
+          <!-- Inline SVG 3 -->
+          <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="g3"><stop offset="0%" stop-color="#F7CFE3"/><stop offset="100%" stop-color="#E9A8C7"/></linearGradient></defs>
+            <rect width="1200" height="800" fill="url(#g3)"/>
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="48" fill="#0B0B0C">Pet & Lawn</text>
+          </svg>
+        </div>
+        <div class="imgbox">
+          <!-- Inline SVG 4 -->
+          <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="g4"><stop offset="0%" stop-color="#F7CFE3"/><stop offset="100%" stop-color="#E9A8C7"/></linearGradient></defs>
+            <rect width="1200" height="800" fill="url(#g4)"/>
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="48" fill="#0B0B0C">Events & Moving</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hire">
+    <div class="container">
+      <h2>Hire Helpers</h2>
+      <p class="muted">Tell us what you need and we’ll match the right helpers fast.</p>
+      <form class="card mt-6" onsubmit="return handleSubmit(event, 'Hire Request')">
+        <div class="row">
+          <label><span>Your Name</span><input name="name" required></label>
+          <label><span>Phone</span><input name="phone" placeholder="251-289-0478"></label>
+          <label><span>Email</span><input name="email" type="email" placeholder="you@example.com"></label>
+          <label><span>Location (City/ZIP)</span><input name="location"></label>
+          <label><span>Date/Time</span><input name="date"></label>
+          <label><span>Budget</span><input name="budget" placeholder="$ / hr or flat"></label>
+        </div>
+        <div class="mt-6">
+          <label><span>What do you need done?</span><textarea name="message" rows="6"></textarea></label>
+        </div>
+        <div class="mt-6"><button class="btn btn-primary">Submit Hire Request</button></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="container">
+      <h2>Become a Helper</h2>
+      <p class="muted">Pick your rate & skills. Get matched to nearby gigs.</p>
+      <form class="card mt-6" onsubmit="return handleSubmit(event, 'Helper Application')">
+        <div class="row">
+          <label><span>Full Name</span><input name="name" required></label>
+          <label><span>Phone</span><input name="phone"></label>
+          <label><span>Email</span><input name="email" type="email"></label>
+          <label><span>Location (City/ZIP)</span><input name="location"></label>
+          <label><span>Transportation</span>
+            <select name="transport">
+              <option>Car</option><option>Van</option><option>Truck</option><option>Boat</option>
+              <option>Bus</option><option>None</option>
+            </select>
+          </label>
+          <label><span>Rate (hourly or flat)</span><input name="budget"></label>
+        </div>
+        <div class="mt-6">
+          <label><span>Skills (comma-separated)</span><input name="skills" placeholder="Cleaning, Handyman, Lawn, Pet Care"></label>
+        </div>
+        <div class="mt-6">
+          <label><span>Short Bio / Experience</span><textarea name="message" rows="6"></textarea></label>
+        </div>
+        <div class="mt-6"><button class="btn btn-primary">Submit Application</button></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="muted">Questions, partnerships, media? Reach out.</p>
+      <form class="card mt-6" onsubmit="return handleSubmit(event, 'Contact')">
+        <div class="row">
+          <label><span>Your Name</span><input name="name" required></label>
+          <label><span>Email</span><input name="email" type="email"></label>
+          <label><span>Phone</span><input name="phone" placeholder="251-289-0478"></label>
+          <label><span>Location (optional)</span><input name="location"></label>
+        </div>
+        <div class="mt-6">
+          <label><span>Message</span><textarea name="message" rows="6" required></textarea></label>
+        </div>
+        <div class="mt-6"><button class="btn btn-primary">Send Message</button></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <div class="card mt-6">
+        We serve elderly and disabled people, busy moms, families, and businesses.
+        Two sides of the website: one for hiring and one for side-hustlers seeking daily work.
+        Featured businesses pass an extensive verification process to ensure services meet our standards.
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Scout Goat. All rights reserved.</div>
+      <div style="display:flex;gap:12px">
+        <a href="#about">About</a>
+        <a href="#hire">Hire</a>
+        <a href="#work">Work</a>
+        <a href="tel:2512890478" style="font-weight:700">251-289-0478</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Form handler → opens mailto draft to scoutgoat4733@gmail.com
+    function handleSubmit(e, source){
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      const lines = [];
+      lines.push('Source: ' + source);
+      for (const [k,v] of data.entries()){
+        if(!v) continue;
+        lines.push(k + ': ' + v);
+      }
+      const body = encodeURIComponent(lines.join('\\n'));
+      const subject = encodeURIComponent('Scout Goat — ' + source + ' submission');
+      // NOTE: mailto opens the user email client. For server sending, use a backend/API.
+      window.location.href = 'mailto:scoutgoat4733@gmail.com?subject=' + subject + '&body=' + body;
+      // Optional UX: show a small toast
+      toast('Opening your email app to send...');
+      form.reset();
+      return false;
+    }
+
+    function toast(msg){
+      const el = document.createElement('div');
+      el.textContent = msg;
+      el.style.position='fixed'; el.style.left='50%'; el.style.bottom='24px'; el.style.transform='translateX(-50%)';
+      el.style.background='var(--sg-pink)'; el.style.padding='10px 16px'; el.style.borderRadius='999px'; el.style.boxShadow='0 10px 30px rgba(233,168,199,.45)';
+      el.style.zIndex='60';
+      document.body.appendChild(el);
+      setTimeout(()=>{ el.remove(); }, 3000);
+    }
+  </script>
+</body>
+</html>
